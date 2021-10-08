@@ -1,5 +1,26 @@
 {
     "navigationFallback": {
         "rewrite": "/index.html"
-    }
+    },
+    "auth": {
+        "identityProviders": {
+          "azureActiveDirectory": {
+            "registration": {
+              "openIdIssuer": "https://login.microsoftonline.com/83230519-dce5-4e5a-91d7-17468e96478f/v2.0",
+              "clientIdSettingName": "d8742c9d-1540-4132-8cd3-ced3177055fc",
+              "clientSecretSettingName": "901420f5-ef89-4429-9d38-a9d543e64ec8"
+            }
+          }
+        }
+    },
+    "routes":[
+        {
+            "route": "/login",
+            "serve": "/.auth/login/aad"
+        },
+        {
+            "route": "/profile",
+            "allowedRoles": ["authenticated"]
+        }
+    ]   
 }
