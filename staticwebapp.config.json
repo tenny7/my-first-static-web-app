@@ -40,8 +40,8 @@
             "userDetailsClaim": "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name",
             "registration": {
               "openIdIssuer": "https://login.microsoftonline.com/83230519-dce5-4e5a-91d7-17468e96478f",
-              "clientIdSettingName": "500f5346-da78-47d6-a54c-fbf141f243f5",
-              "clientSecretSettingName": "ax_7Q~B9av11HdxFSl~Z0hKIcWRmwz3I5y2Pm"
+              "clientIdSettingName": "AADClientID",
+              "clientSecretSettingName": "AADSecret"
             }
           }
         }
