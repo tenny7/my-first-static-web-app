@@ -7,8 +7,8 @@
           "azureActiveDirectory": {
             "registration": {
               "openIdIssuer": "https://login.microsoftonline.com/83230519-dce5-4e5a-91d7-17468e96478f/v2.0",
-              "clientIdSettingName": "AADClientID",
-              "clientSecretSettingName": "AADSecret"
+              "clientIdSettingName": "500f5346-da78-47d6-a54c-fbf141f243f5",
+              "clientSecretSettingName": "ax_7Q~B9av11HdxFSl~Z0hKIcWRmwz3I5y2Pm"
             }
           }
         }
