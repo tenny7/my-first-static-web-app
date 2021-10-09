@@ -27,10 +27,6 @@
             "rewrite": "/profile.html"
         },
         {
-            "route": "/login",
-            "rewrite": "/.auth/login/done"
-        },
-        {
             "route": "/.auth/login/twitter",
             "statusCode": 404
         },
