@@ -2,17 +2,6 @@
     "navigationFallback": {
         "rewrite": "/index.html"
     },
-    "auth": {
-        "identityProviders": {
-          "azureActiveDirectory": {
-            "registration": {
-              "openIdIssuer": "https://login.microsoftonline.com/83230519-dce5-4e5a-91d7-17468e96478f/v2.0",
-              "clientIdSettingName": "500f5346-da78-47d6-a54c-fbf141f243f5",
-              "clientSecretSettingName": "0849e2cd-e029-4abc-a2a0-c8f91bd445c7"
-            }
-          }
-        }
-    },
     "routes":[
         {
             "route": "/login",
@@ -45,6 +34,18 @@
 			"statusCode": 302
 		}
 	},
+    "auth": {
+        "identityProviders": {
+          "azureActiveDirectory": {
+            "userDetailsClaim": "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name",
+            "registration": {
+              "openIdIssuer": "https://login.microsoftonline.com/83230519-dce5-4e5a-91d7-17468e96478f",
+              "clientIdSettingName": "500f5346-da78-47d6-a54c-fbf141f243f5",
+              "clientSecretSettingName": "ax_7Q~B9av11HdxFSl~Z0hKIcWRmwz3I5y2Pm"
+            }
+          }
+        }
+      },
     "globalHeaders": {
         "content-security-policy": "default-src https: 'unsafe-eval' 'unsafe-inline'; object-src 'none'"
       },
