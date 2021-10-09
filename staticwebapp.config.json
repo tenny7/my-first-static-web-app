@@ -23,6 +23,10 @@
             "rewrite": "/.auth/logout"
         },
         {
+            "route": "/profile",
+            "rewrite": "/profile.html"
+        },
+        {
             "route": "/.auth/login/twitter",
             "statusCode": 404
         },
