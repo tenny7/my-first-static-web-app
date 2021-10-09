@@ -7,8 +7,8 @@
           "azureActiveDirectory": {
             "registration": {
               "openIdIssuer": "https://login.microsoftonline.com/83230519-dce5-4e5a-91d7-17468e96478f/v2.0",
-              "clientIdSettingName": "d8742c9d-1540-4132-8cd3-ced3177055fc",
-              "clientSecretSettingName": "901420f5-ef89-4429-9d38-a9d543e64ec8"
+              "clientIdSettingName": "500f5346-da78-47d6-a54c-fbf141f243f5",
+              "clientSecretSettingName": "fe7a1304-c076-46b6-9da3-41ef51a38f18"
             }
           }
         }
@@ -25,6 +25,10 @@
         {
             "route": "/profile",
             "rewrite": "/profile.html"
+        },
+        {
+            "route": "/login",
+            "rewrite": "/.auth/login/done"
         },
         {
             "route": "/.auth/login/twitter",
