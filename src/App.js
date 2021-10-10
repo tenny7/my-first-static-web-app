@@ -1,5 +1,5 @@
 import React from 'react';
-import Index from './components/pages'
+import Index from './components/pages/Index.jsx'
 import './index.css';
 import './components/css/reset.css';
 import './components/css/bootstrap-grid.min.css';
